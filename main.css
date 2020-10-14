@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid gray;
+  width: 600px;
+  height: 600px;
+  flex-wrap: wrap;
+  
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  
+
+}
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 5px;
+  margin:10px 10px;
+}
+
+.cell {
+  width: 5%;
+  height: 5%;
+  border: 1px solid lightgray;
+}
+
+
+
+.snakeHead {
+  background-color: red;
+}
+
+.snakeTail{
+
+background-color: greenyellow;
+
+}
+.food {
+  background-color: lightsalmon;
+}
+
+
