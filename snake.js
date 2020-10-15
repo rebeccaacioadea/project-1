@@ -1,23 +1,18 @@
 const grid = document.querySelector('.grid')
-const playButton = document.querySelector('.play')
+const startGame = document.querySelector('#play')
+// const resetButton = document.querySelector('#reset')
+// const pauseButton = document.querySelector('#pause')
+
+
 const width = 20
-
-
-let snakeHeadPosition = 81
+let snakeHeadPosition = 2
 let foodPosition = 0
 let snakeDirection = 'right'
+let score = 0
 
 const cellsArray = []
 let snakeTailPositionsArray = []
 let snakeLength = 0
-
-  //TODO
-  // The player earns points by guiding the snake to eat food
-  //The game should end when the snake hits the wall or itself
-  //PAUSE
-  //SCORE board
-
-
 
 for (let i = 0; i < width ** 2; i++) {
   const div = document.createElement('div')
@@ -33,16 +28,21 @@ for (let i = 0; i < width ** 2; i++) {
 const randomIndex = Math.floor(Math.random() * cellsArray.length)
 foodPosition = cellsArray[randomIndex]
 
-playButton.addEventListener('click', ()  => {
+startGame.addEventListener('click', ()  => {
+  // storing the player scores
+  const newName = prompt('By what name are you known?')
 
+  
   
   // adding food on the grid
   foodPosition.classList.add('food')
 
-
   function updateSnakePosition() {
     if (cellsArray[snakeHeadPosition].classList.contains('food')) {
       
+      // player earn points 
+      score += 50
+
       // removing old food
       foodPosition.classList.remove('food')
 
@@ -60,7 +60,7 @@ playButton.addEventListener('click', ()  => {
 
       // increase the speed of the snake
       
-      setInterval(updateSnakePosition, 3000)
+      setInterval(updateSnakePosition, 500)
 
       
     } else {
@@ -88,7 +88,9 @@ playButton.addEventListener('click', ()  => {
        snakeDirection === 'down' && snakeHeadPosition > (width ** 2 - (width - 1)) || 
        snakeDirection === 'right' && snakeHeadPosition % width === width - 1 ||
         snakeDirection === 'left' && snakeHeadPosition % width === 0  ){  
-        alert('Game Over!!!')
+        clearInterval(interval)
+        alert(`Game Over!!! ${newName} has scored ${score} points`) 
+        return
       } else if (snakeDirection === 'up'  ) {  
         snakeHeadPosition -= width
       } else if (snakeDirection === 'down') {
@@ -137,5 +139,7 @@ playButton.addEventListener('click', ()  => {
     }
     updateSnakeDirection()
   })
-  setInterval(updateSnakePosition, 500)
+  const interval =  setInterval(updateSnakePosition, 600)
+   
 })
+
