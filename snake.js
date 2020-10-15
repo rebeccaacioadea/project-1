@@ -18,7 +18,7 @@ for (let i = 0; i < width ** 2; i++) {
   const div = document.createElement('div')
   div.classList.add('cell')
   grid.appendChild(div)
-  div.innerHTML = i
+  //  div.innerHTML = i
   div.style.fontSize = '10px'
   cellsArray.push(div)
 }
@@ -60,7 +60,7 @@ startGame.addEventListener('click', ()  => {
 
       // increase the speed of the snake
       
-      setInterval(updateSnakePosition, 500)
+      /* setInterval(updateSnakePosition, 500)  */
 
       
     } else {
@@ -76,13 +76,13 @@ startGame.addEventListener('click', ()  => {
       }
       snakeTailPositionsArray[0] = snakeHeadPosition
 
-      //TODO-----> ask for help!!!!
-      // if the snakeHead touches the snakeTail. GAMEOVER
+     
+      // if the snakeHead touches the snakeTail. GAMEOVER-----> this part is not working. RE-DO it
       
-    // for (let i = 1; i < snakeLength;  i++) {
-    //   
-    //   snakeDirection === 'up' || snakeDirection === 'down' || snakeDirection === 'right' || snakeDirection === 'left' && snakeHeadPosition === snakeTailPositionsArray[i]
-    // }
+      /*for (let i = 1; i < snakeLength;  i++) {
+      
+     snakeDirection === 'up' || snakeDirection === 'down' || snakeDirection === 'right' || snakeDirection === 'left' && snakeHeadPosition === snakeTailPositionsArray[i]
+     } */
 
       if (snakeDirection === 'up' && snakeHeadPosition < width  ||
        snakeDirection === 'down' && snakeHeadPosition > (width ** 2 - (width - 1)) || 
@@ -90,7 +90,8 @@ startGame.addEventListener('click', ()  => {
         snakeDirection === 'left' && snakeHeadPosition % width === 0  ){  
         clearInterval(interval)
         alert(`Game Over!!! ${newName} has scored ${score} points`) 
-        return
+        resetGame()
+
       } else if (snakeDirection === 'up'  ) {  
         snakeHeadPosition -= width
       } else if (snakeDirection === 'down') {
@@ -139,7 +140,10 @@ startGame.addEventListener('click', ()  => {
     }
     updateSnakeDirection()
   })
-  const interval =  setInterval(updateSnakePosition, 600)
-   
+  const interval =  setInterval(updateSnakePosition, 400)  
 })
+
+function resetGame() {
+  window.location.reload()
+}
 

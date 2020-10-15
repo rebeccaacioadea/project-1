@@ -11,10 +11,20 @@ body {
   margin: 0
 }
 
+h1 {
+color: tomato;
+font-size: 50px;
+font-weight: bolder;
+
+text-decoration: double underline;
+text-decoration-color: black;
+
+}
+
 .grid {
   display: flex;
   flex-direction: row;
-  border: 3px solid gray;
+  border: 5px solid red;
   width: 600px;
   height: 600px;
   flex-wrap: wrap;
@@ -42,22 +52,26 @@ button, input {
 .cell {
   width: 5%;
   height: 5%;
-  border: 1px solid lightgray;
+  background-color: green;
+  /* border: 1px solid lightgray; */
 }
 
 
 
 .snakeHead {
-  background-color: red;
+
+  background-color: orange;
 }
 
 .snakeTail{
 
-background-color: greenyellow;
+background-color: black;
 
 }
 .food {
-  background-color: yellow;
+  background-image: url("https://images.wsj.net/im-13609?width=1280&size=1");
+  background-size: cover;
+ 
 }
 
 
