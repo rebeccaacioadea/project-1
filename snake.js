@@ -30,7 +30,7 @@ foodPosition = cellsArray[randomIndex]
 
 startGame.addEventListener('click', ()  => {
   // storing the player scores
-  const newName = prompt('By what name are you known?')
+  const newName = prompt('Enter Your Name')
 
   
   
