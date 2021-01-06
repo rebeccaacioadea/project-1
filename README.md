@@ -33,9 +33,9 @@ This project demonstrate my knowledge   after 2 weeks of learning JavaScript.
 
 * I decided to generate a 20by20 grid for my game using an array of div's. This makes it easier to control and keep track of the position of the food or the snake.
 
+![](https://i.imgur.com/MdCu2A7m.png)
 
 
-![](https://i.imgur.com/MdCu2A7l.png)
 ## Functionality: 
 * The food is placed randomly on the grid. The first food is placed when the game start, and then it is adding throughout the game whenever the snake eats the food on the grid.
 
