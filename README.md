@@ -1,5 +1,5 @@
 
-
+![](https://ga-core.s3.amazonaws.com/production/uploads/program/default_image/9142/CMYK-Red_Small_GeneralAssembly-Cog.png)
 ## project-1: Grid Game <<< Snake >>>
 
 ## Overview 
@@ -30,13 +30,8 @@ This project demonstrate my knowledge   after 2 weeks of learning JavaScript.
 
 ### The layout of the grid:
 
-* I decided to create the grid for my game using an array of div's. This makes it easier to control and keep track of the position of the food or the snake.
-### Functionality: 
+* I decided to generate a 20by20 grid for my game using an array of div's. This makes it easier to control and keep track of the position of the food or the snake.
 
 
 
-### Snake movement:
-
-
-
-16/0ct
+### Functionality: ![](https://drive.google.com/file/d/1c96Aw2wV_vHIdduDmDB0CLIVughx9lwI/view?usp=sharing)
