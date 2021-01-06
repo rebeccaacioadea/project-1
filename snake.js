@@ -14,6 +14,7 @@ const cellsArray = []
 let snakeTailPositionsArray = []
 let snakeLength = 0
 
+// creating the grid for the game
 for (let i = 0; i < width ** 2; i++) {
   const div = document.createElement('div')
   div.classList.add('cell')
