@@ -1,5 +1,5 @@
 
-![](https://ga-core.s3.amazonaws.com/production/uploads/program/default_image/9142/CMYK-Red_Small_GeneralAssembly-Cog.png)
+
 ## project-1: Grid Game <<< Snake >>>
 
 ## Overview 
@@ -35,12 +35,12 @@ This project demonstrate my knowledge   after 2 weeks of learning JavaScript.
 
 
 
-![](https://i.imgur.com/MdCu2A7.png)
-
+![](https://i.imgur.com/MdCu2A7l.png)
 ## Functionality: 
 * The food is placed randomly on the grid. The first food is placed when the game start, and then it is adding throughout the game whenever the snake eats the food on the grid.
 
-![](https://i.imgur.com/MbSbyMA.png)
+
+![](https://i.imgur.com/MbSbyMAl.png)
 
 * The snake should be able to eat food to grow bigger/ longer.
 * The player should earn points whenever the snake eat the food.
@@ -52,6 +52,7 @@ This project demonstrate my knowledge   after 2 weeks of learning JavaScript.
 * Snake's speed increases as it eats more food.
 
 ![](https://i.imgur.com/QcL2Uwy.png)
+![]()
 
 ## Snake Movement
 
@@ -59,9 +60,14 @@ The movement of the snake was controlled by using an array to control the positi
 As the snake's head moves right, left, up or down the grid. The snake's tail with a position snakeTailPositionsArray[0] replace the postion of the snake's head 
 ![](https://i.imgur.com/dqeZucc.png)
 
-![](https://i.imgur.com/CYppHbw.png)
+![](https://i.imgur.com/CYppHbwl.png)
 
 ## Screenshots
+![](https://i.imgur.com/n9V3PwJm.png?1)
+
+![](https://i.imgur.com/YE5tutSl.png)
+
+![](https://i.imgur.com/qcH0EAYl.png)
 
 ## Potential future features
 * Responsive design. Allowing the user to have the same as experience on their mobile phones
