@@ -35,7 +35,7 @@ startGame.addEventListener('click', ()  => {
 
   let interval = 0
   
-  // adding food on the grid
+  // adding food randomly on the grid
   foodPosition.classList.add('food')
 
   function updateSnakePosition() {
@@ -73,12 +73,6 @@ startGame.addEventListener('click', ()  => {
         interval = setInterval(updateSnakePosition, 100)  
       }
       
-
-      // 10 m/s --> ? s for 1m 1/10 -> 0.1s
-      // 10 c/s --> 1/10 --> 0.1s (100ms)
-      // 15 c/s --> 1/15 --> 0.0667 (67ms)
-      
-      /* setInterval(updateSnakePosition, 500)  */
 
       
     } else {

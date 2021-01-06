@@ -5,7 +5,8 @@
 ## Overview 
 This is my first ever project at General Assembly as a Software Engineer Immersive course's student.
 
-The aim of this project was to create a grid-game and can be render in the brower by using HTML, CSS and JavaScript.
+The aim of this project is to create a grid-game which can be render in the brower by using HTML, CSS and JavaScript.
+The player should be able to guide the snake to eat food randomly placed on the game board. 
 
 This project demonstrate my knowledge   after 2 weeks of learning JavaScript.
 
@@ -26,7 +27,7 @@ This project demonstrate my knowledge   after 2 weeks of learning JavaScript.
 * Git 
 * GitHub
 
-##Approach taken:
+## Approach taken:
 
 ### The layout of the grid:
 
@@ -34,4 +35,42 @@ This project demonstrate my knowledge   after 2 weeks of learning JavaScript.
 
 
 
-### Functionality: ![](https://drive.google.com/file/d/1c96Aw2wV_vHIdduDmDB0CLIVughx9lwI/view?usp=sharing)
+![](https://i.imgur.com/MdCu2A7.png)
+
+## Functionality: 
+* The food is placed randomly on the grid. The first food is placed when the game start, and then it is adding throughout the game whenever the snake eats the food on the grid.
+
+![](https://i.imgur.com/MbSbyMA.png)
+
+* The snake should be able to eat food to grow bigger/ longer.
+* The player should earn points whenever the snake eat the food.
+* The game is declear "Game Over!!!" whenever a collision occurs. I had 3 collisions in this game to deal with. 
+	1. 	Snake colliding with itself
+	2. Snake colliding with the food
+	3. Snake colliding with itself
+
+* Snake's speed increases as it eats more food.
+
+![](https://i.imgur.com/QcL2Uwy.png)
+
+## Snake Movement
+
+The movement of the snake was controlled by using an array to control the position on the snake's head and it's tail on the grid. 
+As the snake's head moves right, left, up or down the grid. The snake's tail with a position snakeTailPositionsArray[0] replace the postion of the snake's head 
+![](https://i.imgur.com/dqeZucc.png)
+
+![](https://i.imgur.com/CYppHbw.png)
+
+## Screenshots
+
+## Potential future features
+* Responsive design. Allowing the user to have the same as experience on their mobile phones
+* Multi-player mode
+* Scoreboard with the 5 highest  score
+
+## Lessons learned
+
+* Plan
+
+
+
