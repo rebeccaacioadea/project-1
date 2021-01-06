@@ -70,7 +70,7 @@ As the snake's head moves right, left, up or down the grid. The snake's tail wit
 
 ## Lessons learned
 
-* Plan
+* Through this project I have learnt that planning is the key part is developments. As there were some unforeseen problems that could have been avioded with a detailed planning.
 
 
 
