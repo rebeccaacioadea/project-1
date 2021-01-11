@@ -72,6 +72,7 @@ As the snake's head moves right, left, up or down the grid. The snake's tail wit
 ## Potential future features
 * Responsive design. Allowing the user to have the same as experience on their mobile phones
 * Multi-player mode
+* Adding music and sound effects
 * Scoreboard with the 5 highest  score
 
 ## Lessons learned
