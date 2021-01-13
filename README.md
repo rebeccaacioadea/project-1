@@ -1,6 +1,6 @@
 ![ga_cog_large_red_rgb](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png)
 
-## project-1: Grid Game <<< Snake >>>
+## project-1: Grid Game <<< [Snake](https://rebeccaacioadea.github.io/project-1) >>>
 
 ## Overview 
 This is my first ever project at General Assembly as a Software Engineer Immersive course's student.
@@ -12,12 +12,12 @@ This project demonstrate my knowledge   after 2 weeks of learning JavaScript.
 
 ### Brief:
 
-* Render a game in the browser
-* Design logic for winning
-* Include separate HTML. CSS or JavaScript files
-* Use JavaScript for DOM manipulation 
-* Depoly your game online
-* Use semantic markup for HTML and CSS (adhere to best practices
+* Render a game in the browser.
+* Design logic for winning.
+* Include separate HTML, CSS or JavaScript files.
+* Use JavaScript for DOM manipulation.
+* Depoly your game online.
+* Use semantic markup for HTML and CSS (adhere to best practices.
 
 ### Technologies:
 
@@ -45,9 +45,9 @@ This project demonstrate my knowledge   after 2 weeks of learning JavaScript.
 * The snake should be able to eat food to grow bigger/ longer.
 * The player should earn points whenever the snake eat the food.
 * The game is declear "Game Over!!!" whenever a collision occurs. I had 3 collisions in this game to deal with. 
-	1. 	Snake colliding with itself
-	2. Snake colliding with the food
-	3. Snake colliding with itself
+	1. 	Snake colliding with itself.
+	2. Snake colliding with the food.
+	3. Snake colliding with itself.
 
 * Snake's speed increases as it eats more food.
 
@@ -57,7 +57,7 @@ This project demonstrate my knowledge   after 2 weeks of learning JavaScript.
 ## Snake Movement
 
 The movement of the snake was controlled by using an array to control the position on the snake's head and it's tail on the grid. 
-As the snake's head moves right, left, up or down the grid. The snake's tail with a position snakeTailPositionsArray[0] replace the postion of the snake's head 
+As the snake's head moves right, left, up or down the grid. The snake's tail with a position ***snakeTailPositionsArray[0]*** replaces the postion of the snake's head.
 ![](https://i.imgur.com/dqeZucc.png)
 
 ![](https://i.imgur.com/CYppHbwl.png)
